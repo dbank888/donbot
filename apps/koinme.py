@@ -259,7 +259,8 @@ class Koinme(SeleTask):
     def login(self):
         try:
             tg = get_tg()
-            tg.send_message('saythx', 'please solve login captcha')
+            if tg:
+                tg.send_message('saythx', 'please solve login captcha')
             if self.s.driver.current_url != self.urls['login']:
                 self.s.get(self.urls['login'])
             username = self.s.find_element((By.ID, 'loginform-username'))
