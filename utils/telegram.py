@@ -19,12 +19,20 @@ def get_tg(cfg=None, session=None, api_id=None, api_hash=None, phone=None, proxy
 
     if session:
         config['session'] = session
+    else:
+        return None
     if api_id:
         config['api_id'] = api_id
+    else:
+        return None
     if api_hash:
         config['api_hash'] = api_hash
+    else:
+        return None
     if phone:
         config['phone'] = phone
+    else:
+        return None
     if proxy:
         config['proxy'] = proxy
     else:
@@ -45,3 +53,4 @@ def get_tg(cfg=None, session=None, api_id=None, api_hash=None, phone=None, proxy
 if __name__ == '__main__':
     c = get_tg_client('ameb')
     print(c.get_me())
+
