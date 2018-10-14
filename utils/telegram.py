@@ -7,7 +7,7 @@ from telethon import TelegramClient
 def get_tg(cfg=None, session=None, api_id=None, api_hash=None, phone=None, proxy=None):
     config = {}
     if cfg is None:
-        cfg = Path('utils/telegram.cfg')
+        cfg = Path('cfg/telegram.cfg')
     else:
         cfg = Path(cfg)
 
