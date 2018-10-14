@@ -2,7 +2,7 @@
 Make life automatically.
 
 ## How to install
-Need Python 3.5+
+Python 3.5+ required
 
 `git clone https://github.com/fakedon/donbot.git`
 
