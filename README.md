@@ -49,4 +49,5 @@ Eb_emu
 
 Bing
 # Get Bing reward
+# put the search words under dir mess/bingkeywords, one search words per line
 -q --close YES or NO     whether close firefox when this time view finished, Default False
