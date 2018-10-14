@@ -466,7 +466,8 @@ class Ameb(SeleTask):
     def send_tg_msg(self, msg):
         try:
             tg = get_tg()
-            tg.send_message('saythx', msg)
+            if tg:
+                tg.send_message('saythx', msg)
         except Exception as e:
             self.logger.exception(e)
 
