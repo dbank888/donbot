@@ -16,13 +16,13 @@ if you want use telegram notification, set telegram config at utils/telegram.cfg
 `python run.py OPTIONS`
 ### Options
 ```
--t --task empty if you set this option, this will just run an empty firefox instance
+-t --task empty          if you set this option, this will just run an empty firefox instance
 
 # you can use yes y true t or 1 for YES, and no n false f or 0 for NO.
 
 Koinme
 -c --config sample.cfg#4
--a YES or NO, if your account can auto view, choose YES, or choose NO
+-a YES or NO             if your account can auto view, choose YES, or choose NO
 
 Ameb
 # Run am autoview and eb autoview in one firefox
